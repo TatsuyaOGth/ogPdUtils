@@ -1,0 +1,26 @@
+#N canvas 269 303 450 300 10;
+#X obj 103 103 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 102 201 metro 20;
+#X obj 102 231 outlet;
+#X floatatom 123 102 6 0 0 0 - - -;
+#X obj 123 76 int \$1;
+#X obj 123 48 loadbang;
+#X obj 168 75 int \$2;
+#X text 237 46 Quick Metro convert BPM;
+#X msg 132 153 60000;
+#X obj 132 175 /;
+#X obj 133 127 t b f;
+#X text 163 102 BPM;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 10 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X connect 8 0 9 0;
+#X connect 9 0 1 1;
+#X connect 10 0 8 0;
+#X connect 10 1 9 1;
+#X coords 0 -1 1 1 85 20 2 100 100;
